@@ -1,12 +1,12 @@
 #include<bits/stdc++.h>
-#define mod 1000000000
-#define ull unsigned long long
+#define mod 1000000000 // 10^9 mod 
+#define ull unsigned long long // for long integers
 using namespace std;
 
-ull ncr[1000][1000];
-ull nCr(ull n, ull r)
+ull ncr[1000][1000]; // matrix of 10^3 and 10^3
+ull nCr(ull n, ull r) 
 {
-    if(r == 0 || n == r)
+    if(r == 0 || n == r) // 10c0 = 1 10c10= 
         return ncr[n][r] = 1;
     if(r == 1)
         return ncr[n][r] = n;
